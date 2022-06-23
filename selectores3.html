@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color:steelblue;
+            color:gold;
+        }
+        p:hover{
+            background-color:black;
+            color:cornsilk;
+        }
+        div p:nth-child(2){
+            background-color:yellow;
+            color:maroon;
+        }
+        p::first-letter{
+            color:DarkSlateBlue;
+        }
+        p::before{
+            content: "🤠";
+        }
+        p::after{
+            content: "😎";
+        }
+        ::placeholder{
+            color:yellow;
+            background-color:steelblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Holiwis</p>
+    <div>
+        <p>Soy el mejor parrafo del mundo</p>
+    </div>
+    <div>
+        <p>No tan rápido vaquero</p>
+        <p>Que alguien envenenó el abrevadero</p>
+        <p>Si, fui yo!</p>
+        <p>Fui yo, Barry.</p>
+    </div>
+    <input type="text" placeholder="Escribe el nombre, vaquero">
+</body>
+</html>
