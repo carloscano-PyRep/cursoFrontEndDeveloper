@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Aquí aunque aplicamos el selector, tenemos excepciónes por el especificidad */
+    /* Selector de etiqueta */
+    div{
+        background-color: rgb(199, 154, 5);
+    }
+    /* Selector de clase */
+    .titulo{
+        background-color: #585;
+    }
+    /* Selector de id */
+    #titulo2{
+        background-color: rgb(85, 103, 136);
+    }
+    /* Selector de atributo */
+    a[href="https://pomofocus.io/"]{
+        background-color: rgb(170, 34, 15);
+    }
+    /* Selector universal */
+    *{
+        background-color: rgb(83, 199, 5);;
+    }
+</style>
+<body>
+    <div>Hola mundo</div>
+    <div class="titulo">El mundo uwu</div>
+    <div id="titulo2">El mundo de unu</div>
+    <a href="https://pomofocus.io/">Link Pomodoro</a>
+</body>
+</html>

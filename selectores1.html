@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendientes */
+    div p{
+        background-color: #585;
+    }
+    /* Hijo directo */
+    div > div{
+        background-color: #985;
+    }
+    /* Elemendo adyacente */
+    div + section{
+        background-color: rgb(41, 168, 231);
+    }
+    /* General de hermanos */
+    div ~ p{
+        background-color: #125;
+        color: gold;
+    }
+    </style>
+</head>
+<body>
+    <div>Descendientes
+        <p>Soy un descendiente</p>
+        <p>Y yo también</p>
+    </div>
+    <section>
+        <p>Yo no sería un hijo directo, soy un elemento adyacente porque
+            estoy después de una etiqueta div de cierre.
+        </p>
+    </section>
+    <section>
+        <p>Yo no soy un elemento adyacente</p>
+    </section>
+    <div>
+        <div>Yo soy un hijo directo</div>
+    </div>
+    <section>
+        <p>Yo soy el otro, otro adyacente</p>
+    </section>
+    <div>Aquí viene un General de hermanos</div>
+    <p>Hola, soy el estilizado general de hermanos</p>
+</body>
+</html>
